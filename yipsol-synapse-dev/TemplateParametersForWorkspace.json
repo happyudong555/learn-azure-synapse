@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "yipsol-synapse-dev"
+		},
+		"yipsol-synapse-dev-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:yipsol-synapse-dev.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"yipsol-synapse-dev-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://yipsolsynapse.dfs.core.windows.net"
+		}
+	}
+}
